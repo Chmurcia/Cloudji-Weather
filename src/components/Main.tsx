@@ -10,10 +10,9 @@ import { Button } from "../ui/Button";
 import { IoMenu } from "react-icons/io5";
 import AddInfo from "./AddInfo";
 import { NoData } from "../ui/NoData";
-import Spinner from "../ui/Spinner";
 
 const Main = () => {
-  const { data, isLoading } = useWeatherContext();
+  const { data } = useWeatherContext();
 
   const [showAddData, setShowAddData] = useState<boolean>(false);
   useEffect(() => {
@@ -45,11 +44,7 @@ const Main = () => {
         </Button>
       )}
       {!data ? (
-        isLoading ? (
-          <Spinner />
-        ) : (
-          <NoData />
-        )
+        <NoData />
       ) : (
         <>
           <MainContent className="md:max-h-3/4 font-semibold flex flex-col sm:gap-2 md:gap-4 gap-8 justify-center h-full items-center">

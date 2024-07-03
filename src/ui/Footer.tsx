@@ -3,7 +3,7 @@ import { NextDay } from "./NextDay";
 type FooterProps = { className: string; array: [] };
 
 export const Footer = ({ className, array }: FooterProps) => {
-  const SevenDays = array?.slice(0, 7);
+  const SevenDays = array?.slice(1, 8);
 
   return (
     <div className={className}>

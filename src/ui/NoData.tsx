@@ -8,8 +8,8 @@ export const NoData = () => {
       <TbWorldSearch size={300} />
       <div className="px-4 text-center">
         {isMedium
-          ? "Try to chech current weather by clicking the little icon in top right corner and typing your city!"
-          : "Try to chech current weather by clicking the input in the top left corner and typing your city!!"}
+          ? "Try to check current weather by clicking the little icon in top right corner and typing your city!"
+          : "Try to check current weather by clicking the input in the top left corner and typing your city!"}
       </div>
     </>
   );
